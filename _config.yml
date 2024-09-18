@@ -12,7 +12,7 @@ title                    : "Andrew Hunter"
 title_separator          : "-"
 name                     : &name "Andrew Hunter"
 description              : &description "personal description"
-url                      :  # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "andrewhunterphd/andrewhunter.github.io" # "academicpages/academicpages.github.io"
 
@@ -24,7 +24,7 @@ author:
   avatar           : "profile1.png"
   name             : "Andrew Hunter"
   pronouns         : # example: "He/Him"  
-  bio              : "Postdoctoral Research F%llow"
+  bio              : "Postdoctoral Research F7llow"
   location         : "London, UK"
   employer         : "Royal Holloway, UoL"
   uri              : # URL
