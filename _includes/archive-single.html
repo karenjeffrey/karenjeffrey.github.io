@@ -7,15 +7,19 @@
     .archive__item:hover .archive__item-title {
       text-decoration: none;
     }
+    
     .description-container {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
     }
-    .description-container .archive__item-excerpt {
-      margin: 0;
+    
+    .description {
+      flex: 1;
     }
-    .description-container .view-paper-link {
-      margin-left: 10px; /* Adjust spacing between description and link as needed */
+    
+    .view-paper-link {
+      margin-left: 10px; /* Add some space between description and link */
     }
   </style>
 </head>
@@ -65,20 +69,19 @@
     {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
-      <div class="description-container">
-        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-        {% if post.paperurl %}
-          <a class="view-paper-link" href="{{ post.paperurl }}">View Paper</a>
-        {% endif %}
-      </div>
+    <div class="description-container">
+      <p class="description archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% if post.paperurl %}
+        <a class="view-paper-link" href="{{ post.paperurl }}">View Paper</a>
+      {% endif %}
+    </div>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-      <div class="description-container">
-        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-        <strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong>
-        {% if post.paperurl %}
-          <a class="view-paper-link" href="{{ post.paperurl }}">View Paper</a>
-        {% endif %}
-      </div>
+    <div class="description-container">
+      <p class="description archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
+      {% if post.paperurl %}
+        <a class="view-paper-link" href="{{ post.paperurl }}">View Paper</a>
+      {% endif %}
+    </div>
     {% endif %}
     
     {% if post.citation and post.paperurl and post.slidesurl %}
@@ -90,9 +93,9 @@
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }}</p>
     {% elsif post.paperurl %}
-      <p><a href="{{ post.paperurl }}">View Paper</a></p>
+      <p><a href=" {{ post.paperurl }} ">View Paper</a></p>
     {% elsif post.slidesurl %}
-      <p>Download <a href="{{ post.slidesurl }}">Download Slides</a></p>
+      <p>Download <a href="{{ post.slidesurl }}">Download Slides</a></p></p>
     {% endif %}
 
   </article>
