@@ -7,34 +7,34 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-title                    : "Andrew Hunter"
+locale                   : "en-UK"
+title                    : "Karen Jeffrey"
 title_separator          : "-"
-name                     : &name "Andrew Hunter"
+name                     : &name "Karen Jeffrey"
 description              : &description "personal description"
-url                      : https://andrewhunterphd.github.io/andrewhunter.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://karenjeffrey.github.io/karenjeffrey.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "andrewhunter.github.io" # "academicpages/academicpages.github.io"
+repository               : "karenjeffrey.github.io" # "academicpages/academicpages.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile1.png"
-  name             : "Andrew Hunter"
+  avatar           : "profile.png"
+  name             : "Karen Jeffreyr"
   pronouns         : # example: "He/Him"  
-  bio              : "Postdoctoral Research Fellow"
-  location         : "London, UK"
-  employer         : "Royal Holloway, UoL"
+  bio              : "Political Economist & Data Scientist"
+  location         : "Edinburgh, UK"
+  employer         : #"Royal Holloway, UoL"
   uri              : # URL
-  email            : "andrew.hunter@rhul.ac.uk" 
+  email            : #"karenojeffrey@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=aRvZD7MAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=e65x82QAAAAJ&sortby=pubdate"
   impactstory      : # URL
-  orcid            : "https://orcid.org/0000-0002-6301-6654"
+  orcid            : #"https://orcid.org/0000-0002-0061-6089"
   semantic         : # URL
   pubmed           : #
   researchgate     : # URL
@@ -65,7 +65,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : karenojeffrey # Username for X / Twitter
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
@@ -75,12 +75,12 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+  Political Economy:
+    title: 'Political Economy'
+  Medical Informatics:
+    title: 'Medical Informatics'    
+  Think Tank Reports:
+    title: 'Think Tank Reports'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
