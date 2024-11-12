@@ -1,4 +1,4 @@
-/* Change font size for publication titles */
-h3.publication-title {
-  font-size: 2px; /* Adjust this value as needed */
+/* Custom font size for publication titles */
+h2.archive__item-title {
+  font-size: 24px; /* Adjust this value to your preference */
 }
