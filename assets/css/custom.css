@@ -1,4 +1,5 @@
 /* Custom font size for publication titles */
 h2.archive__item-title {
-  font-size: 24px; /* Adjust this value to your preference */
+  font-size: 2px; /* Adjust this value to your preference */
+  color: blue; /* This sets the font colour to blue */
 }
