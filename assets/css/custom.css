@@ -1,1 +1,4 @@
-
+/* Change font size for publication titles */
+h3.publication-title {
+  font-size: 2px; /* Adjust this value as needed */
+}
