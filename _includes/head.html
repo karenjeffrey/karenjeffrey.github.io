@@ -23,3 +23,47 @@
 % Add consent banner for analytics
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js"></script>
+
+<script>
+  window.addEventListener("load", function() {
+      window.cookieconsent.initialise({
+          "palette": {
+              "popup": {
+                  "background": "#000"
+              },
+              "button": {
+                  "background": "#f1d600"
+              }
+          },
+          "theme": "classic",
+          "position": "bottom",
+          "content": {
+              "message": "This website uses cookies to ensure you get the best experience on our website.",
+              "dismiss": "Got it!",
+              "link": "Learn more",
+              "href": "/privacy-policy/"
+          },
+          onStatusChange: function(status) {
+              if (this.hasConsented()) {
+                  // If the user consents, load Google Analytics
+                  loadGoogleAnalytics();
+              }
+          }
+      });
+  });
+
+  // Function to load Google Analytics
+  function loadGoogleAnalytics() {
+      var script = document.createElement("script");
+      script.src = "https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID";
+      script.async = true;
+      script.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-SMGWXB2K41');
+      };
+      document.head.appendChild(script);
+  }
+</script>
+
