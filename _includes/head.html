@@ -20,28 +20,30 @@
 
 <meta http-equiv="cleartype" content="on">
 
-<!-- Add this in your head.html file -->
+<!-- Cookie Consent CSS and JavaScript -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js"></script>
 
 <script>
+  // Wait for the page to load before initializing the cookie consent banner
   window.addEventListener("load", function() {
+      // Initialize the Cookie Consent banner
       window.cookieconsent.initialise({
           "palette": {
               "popup": {
-                  "background": "#000"
+                  "background": "#000" // Background color of the popup
               },
               "button": {
-                  "background": "#f1d600"
+                  "background": "#f1d600" // Button color
               }
           },
-          "theme": "classic",
-          "position": "bottom",
+          "theme": "classic", // Banner theme
+          "position": "bottom", // Position of the banner
           "content": {
-              "message": "This website uses cookies to ensure you get the best experience on our website.",
-              "dismiss": "Got it!",
-              "link": "Learn more",
-              "href": "/privacy-policy/"
+              "message": "This website uses cookies to ensure you get the best experience on our website.", // Message in the banner
+              "dismiss": "Got it!", // Text for dismiss button
+              "link": "Learn more", // Text for the privacy policy link
+              "href": "/privacy-policy/" // Link to the privacy policy page
           },
           onStatusChange: function(status) {
               if (this.hasConsented()) {
@@ -52,18 +54,17 @@
       });
   });
 
-  // Function to load Google Analytics
+  // Function to load Google Analytics once the user consents
   function loadGoogleAnalytics() {
       var script = document.createElement("script");
-      script.src = "https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID";
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-SMGWXB2K41"; // Your GA ID here
       script.async = true;
       script.onload = function() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-SMGWXB2K41');
+          gtag('config', 'G-SMGWXB2K41'); // Your GA ID here
       };
       document.head.appendChild(script);
   }
 </script>
-
