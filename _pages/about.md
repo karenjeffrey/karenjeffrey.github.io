@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I’m a Political Economist and Data Scientist. PhD in Political Economy from King’s College London. Postdoc in Medical Informatics at the University of Edinburgh. 
+I’m a Political Economist and Data Scientist. I completed a PhD in Political Economy at  King’s College London and a Postdoc in Medical Informatics at the University of Edinburgh. 
 
 
 **Research interests**
@@ -20,4 +20,4 @@ My research explores how societies can benefit from AI, while effectively managi
 
 •  Developing evidence-based policies to manage workforce transitions and mitigate AI-related risks
 
-Also interested in refining approaches to measurement and research methods. Passionate about using data to uncover insights that shape better policies, including leveraging survey data to understand people’s lived experiences.
+I'm also interested in refining approaches to measurement and research methods. I'm particularly passionate about using data to uncover insights that shape better policies, including leveraging survey data to understand people’s lived experiences.
