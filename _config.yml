@@ -21,7 +21,7 @@ repository               : "karenjeffrey/karenjeffrey.github.io" # "academicpage
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile1.png"
   name             : "Karen Jeffrey"
   pronouns         : # example: "He/Him"  
   bio              : "Political Economist & Data Scientist"
