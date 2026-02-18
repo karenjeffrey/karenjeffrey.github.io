@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "About"
+title: "Political Economist & Data Scientist"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I’m a Political Economist and Data Scientist. I'm a Data Science & AI Fellow at the University of Glasgow. I completed a PhD in Political Economy at  King’s College London and a Postdoc in Medical Informatics at the University of Edinburgh. 
+I'm a Data Science & AI Fellow in the University of Glasgow's Centre for Data Science & AI. I completed a PhD in Political Economy at  King’s College London and a Postdoc in Medical Informatics at the University of Edinburgh. 
 
 
 **Research interests**
